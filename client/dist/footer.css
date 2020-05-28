@@ -1,0 +1,55 @@
+.brian-footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 175px;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+  color: black;
+  text-align: center;
+}
+
+.footer-logo-frame {
+  position: relative;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  height: 85%;
+  flex: 0 0 auto;
+  text-decoration: none;
+  padding: 0px 4px;
+  
+}
+
+.footer-logo-box {
+  display: inline-block;
+  position: relative;
+  color: rgb(0, 0, 0);
+  fill: rgb(255, 255, 255);
+  width: 100px;
+  height: 100px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4285;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0px;
+  text-indent: 0px;
+  text-shadow: none;
+  text-transform: none;
+  vertical-align: baseline;
+  white-space: normal;
+}
+
+.footer-logo-box img {
+  height: 60px;
+  width: 60px;
+}
+
+.footer-logo-inner {
+  height: 100%;
+  width: 100%;
+}
