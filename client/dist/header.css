@@ -1,0 +1,460 @@
+a {
+  background-color: transparent;
+}
+
+body {
+  /* line-height: 1.4285; */
+  color: rgb(51, 51, 51);
+  background-color: white;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0px;
+}
+
+div, span, p, [tabindex="-1"] {
+  outline: 0px;
+}
+
+div {
+  display: block;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  touch-action: manipulation;
+  font: inherit;
+  margin: 0px;
+}
+
+/* input {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark-color(black, white);
+  display: inline-block;
+  text-align: start;
+  -webkit-appearance: textfield;
+  background-color: -internal-light-dark-color(white, black);
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  font: 400 11px system-ui;
+  padding: 1px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+} */
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+.brian-container, .brian-container-fluid {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0px auto;
+}
+
+.MainHeader {
+  display: flex;
+  height: 60px;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  z-index: 1049;
+  background: rgb(204, 0, 0);
+  padding: 0px 12px;
+}
+
+@media screen and (min-width: 668px) {
+  .MainHeader {
+      height: 75px;
+      padding: 0px 16px 0px 12px;
+  }
+  .navbar-logo-frame {
+    padding: 0px 12px;
+  }
+  .Menu {
+    display: none !important;
+  }
+  .SearchInput #searchInputForm input {
+    padding: 10px 72px 10px 16px;
+  }
+  .SearchInput #searchInputForm {
+    height: 40px !important;
+  }
+  .SearchInput #searchInputForm::before {
+    height: 40px !important;
+  }
+  .AccountBox {
+    display: none;
+    padding-left: 16px;
+    padding-bottom: 13px;
+    flex: 0 0 auto;
+    margin: 0px;
+  }
+  .Checkout {
+    padding-top: 4px;
+    padding-left: 12px;
+    margin-left: 20px;
+    flex: 0 0 auto;
+  }
+  .Checkout .CartNum {
+    top: 5px;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .AccountBox {
+    display: none !important;
+    padding-left: 16px;
+    padding-bottom: 13px;
+    flex: 0 0 auto;
+    margin: 0px;
+  }
+  .SignIn {
+    display: none !important;
+  }
+  .Categories {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 893px) {
+  .h-hidden-lg-up {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 893px) {
+  .Delivery {
+    display: none !important;
+  }
+  .Trending {
+    display: none !important;
+  }
+  
+  .Deals {
+    display: none !important;
+  }
+}
+
+.navbar-logo-frame {
+  position: relative;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  height: 85%;
+  flex: 0 0 auto;
+  text-decoration: none;
+  padding: 0px 4px;
+}
+
+.navbar-logo-box {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  fill: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  width: 46px;
+  height: 46px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4285;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0px;
+  text-indent: 0px;
+  text-shadow: none;
+  text-transform: none;
+  vertical-align: baseline;
+  white-space: normal;
+}
+
+.navbar-logo-inner {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-logo-inner img {
+  height: 46px;
+  width: 46px;
+}
+
+.postings {
+  position: relative;
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+}
+
+.nav-drop {
+  position: relative;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  height: 85%;
+  flex: 0 0 auto;
+}
+
+.nav-drop::before {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  left: calc(50% - 6px);
+  bottom: -12px;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(-45deg);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(214, 214, 214) rgb(214, 214, 214) transparent transparent;
+  border-image: initial;
+}
+
+.caret {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  height: 11px;
+  overflow: hidden;
+  padding-left: 4px !important;
+}
+
+.Menu {
+  margin-left: 4px !important;
+}
+
+.Categories {
+  margin-left: 12px !important;
+}
+
+/* Deals & What's New */
+.full-nav {
+  margin-left: 20px !important;
+}
+
+.SearchInput {
+  display: flex;
+  min-width: 40px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 0px 0px 0px 12px;
+  flex: 1 1 100%;
+}
+
+.SearchInput #searchInputForm {
+  display: block;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  max-width: 640px;
+  width: 100%;
+  height: 34px;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 25px;
+}
+
+.SearchInput #searchInputForm::before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: rgb(247, 247, 247);
+  height: 34px;
+  width: 40px;
+  opacity: 1;
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%2032%2032%22%20enable-background%3D%22new%200%200%2032%2032%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M29.9%2C27.6l-5-5.8c-0.3-0.4-0.4-1.1-0.1-1.6c0.1-0.2%2C2.3-3.8%2C2.3-7c0-7.1-5.8-12.8-12.8-12.8S1.5%2C6%2C1.5%2C13.1%20s5.8%2C12.8%2C12.8%2C12.8c2.4%2C0%2C5.1-1.2%2C5.2-1.2c0.4-0.2%2C1.2%2C0%2C1.5%2C0.3l5%2C5.9c0.4%2C0.5%2C1.1%2C0.8%2C1.8%2C0.8c0.6%2C0%2C1.1-0.2%2C1.5-0.5l0.4-0.3%20c0.5-0.4%2C0.8-1%2C0.8-1.6C30.5%2C28.6%2C30.3%2C28%2C29.9%2C27.6%20M23.2%2C13.1c0%2C4.9-4%2C8.9-8.9%2C8.9s-8.9-4-8.9-8.9s4-8.9%2C8.9-8.9%20C19.2%2C4.2%2C23.2%2C8.2%2C23.2%2C13.1%22%2F%3E%3C%2Fsvg%3E);
+  background-size: 14px;
+  transition: opacity 200ms ease-in 0s;
+  border-radius: 0px 25px 25px 0px;
+  background-repeat: no-repeat;
+  background-position: 42% 50%;
+}
+
+.SearchInput #searchInputForm input {
+  display: block;
+  width: 100%;
+  cursor: text;
+  resize: none;
+  position: relative;
+  -webkit-appearance: none;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.35em;
+  box-sizing: border-box !important;
+  outline: none;
+  padding: 10px 72px 7px 10px;
+  margin: 0px;
+  border-radius: 0px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+}
+
+.AccountBox {
+  display: inline-flex;
+  position: relative;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 85%;
+}
+
+.AccountBox::before {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  left: calc(50% - 6px);
+  bottom: -12px;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(-45deg);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(214, 214, 214) rgb(214, 214, 214) transparent transparent;
+  border-image: initial;
+} 
+
+.Delivery {
+  display: inline-flex;
+}
+
+.UserWrapper {
+  position: relative;
+  top: 3px;
+  right: 7px;
+}
+
+.UserWrapper svg {
+  width: 30px;
+  height: 30px;
+}
+
+.UserCircle {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  fill: rgb(255, 255, 255);
+  width: 30px;
+  height: 30px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4285;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0px;
+  text-indent: 0px;
+  text-shadow: none;
+  text-transform: none;
+  vertical-align: baseline;
+  white-space: normal;
+}
+
+.UserCircle svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.User {
+  height: 100%;
+  width: 100%;
+}
+
+.SignIn {
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-overflow: ellipsis;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  white-space: nowrap;
+  display: block;
+  max-width: 60px;
+  overflow: hidden;
+}
+
+.Checkout {
+  display: inline-flex;
+  position: relative;
+  margin-left: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 85%;
+}
+
+.Cart {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  fill: rgb(255, 255, 255);
+  width: 29px;
+  height: 29px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4285;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0px;
+  text-indent: 0px;
+  text-shadow: none;
+  text-transform: none;
+  vertical-align: baseline;
+  white-space: normal;
+}
+
+.Checkout .CartNum {
+  position: absolute;
+  top: 1px;
+  right: 8px;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
+
+.Basket {
+  height: 100%;
+  width: 100%;
+}
+
+.Cart svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
