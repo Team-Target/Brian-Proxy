@@ -22,21 +22,11 @@ const getItems = (callback) => {
   });
 };
 
-const getItemId = (name, callback) => {
-  connection.query('SELECT id FROM items WHERE Name = ?', [name], (err, items) => {
-    if (err) {
-      console.log('problem querying for items');
-      callback(err, null);
-    } else {
-      callback(null, items);
-    }
-  });
-};
 
 //***************************
 // Add new functions as needed
 //***************************
-module.exports = { getItems, getItemId };
+module.exports = { getItems };
 
 
 // const mongoose = require('mongoose');
